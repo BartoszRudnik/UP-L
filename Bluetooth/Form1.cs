@@ -43,9 +43,10 @@ namespace Bluetooth
         {
             
             BluetoothDeviceInfo device = (BluetoothDeviceInfo) listBox1.SelectedItem;
-            
-            textBox1.Text = device.DeviceName.ToString();
-           
+
+            textBox1.Text = device.DeviceName;
+            textBox3.Text = device.DeviceAddress.ToString();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
