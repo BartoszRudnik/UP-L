@@ -22,15 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5712255-5032-457d-aeff-4bda1050d59a" name="Default Changelist" comment="">
+    <list default="true" id="c5712255-5032-457d-aeff-4bda1050d59a" name="Default Changelist" comment="Sending files">
+      <change afterPath="$PROJECT_DIR$/Bluetooth/shutterstock_451077043-hero1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bluetooth/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bluetooth/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bluetooth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bluetooth/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/bin/Debug/Bluetooth.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/bin/Debug/Bluetooth.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/bin/Debug/Bluetooth.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/bin/Debug/Bluetooth.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/obj/Debug/Bluetooth.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bluetooth/Bluetooth.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bluetooth/Bluetooth.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +84,16 @@
       <option name="presentableId" value="Default" />
       <updated>1602239630167</updated>
       <workItem from="1602239645507" duration="10435000" />
-      <workItem from="1602252423581" duration="1606000" />
+      <workItem from="1602252423581" duration="2852000" />
     </task>
+    <task id="LOCAL-00001" summary="Sending files">
+      <created>1602254198776</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602254198776</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,24 +114,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Sending files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sending files" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1602253271543">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1602254261087">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602253271543" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1602253271543">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602254261087" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1602254261087">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602253271543" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1602253271543">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602254261087" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1602254261087">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602253271543" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1602253271543">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602254261087" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1602254261087">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602253271543" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602254261087" />
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602254210519">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.824@1920.0.1536.824" timestamp="1602254210519" />
     <state x="2506" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602252899605">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>

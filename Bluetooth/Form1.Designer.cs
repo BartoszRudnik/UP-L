@@ -109,7 +109,7 @@
             // 
             this.label2.Location = new System.Drawing.Point(125, 284);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.Size = new System.Drawing.Size(129, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Sciezka do pliku";
             // 
