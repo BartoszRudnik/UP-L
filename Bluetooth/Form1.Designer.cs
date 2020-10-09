@@ -42,6 +42,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize) (this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,6 +64,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.textBox4);
+            this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.textBox3);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
             this.splitContainer1.Panel2.Controls.Add(this.textBox2);
@@ -119,14 +123,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(15, 333);
+            this.textBox2.Location = new System.Drawing.Point(15, 413);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(346, 22);
             this.textBox2.TabIndex = 7;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(125, 307);
+            this.label2.Location = new System.Drawing.Point(125, 387);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 23);
             this.label2.TabIndex = 6;
@@ -177,6 +181,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(125, 247);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 23);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Czy sparowany";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(62, 273);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(236, 22);
+            this.textBox4.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -192,6 +211,10 @@
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.TextBox textBox4;
+
+        private System.Windows.Forms.Label label5;
 
         private System.Windows.Forms.TextBox textBox3;
 

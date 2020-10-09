@@ -27,9 +27,16 @@ namespace Bluetooth
             
             BluetoothClient client = new BluetoothClient();
            
-            BluetoothDeviceInfo[] devices = client.DiscoverDevices();
+            BluetoothDeviceInfo[] devices = client.DiscoverDevices(255, true, false, false);
+            BluetoothDeviceInfo[] devices2 = client.DiscoverDevices(255, false, false, true);
 
             foreach (BluetoothDeviceInfo device in devices)
+            {
+                listBox1.Items.Add(device);
+                listBox2.Items.Add(device.DeviceName);
+            }
+            
+            foreach (BluetoothDeviceInfo device in devices2)
             {
                 listBox1.Items.Add(device);
                 listBox2.Items.Add(device.DeviceName);
@@ -46,6 +53,7 @@ namespace Bluetooth
 
             textBox1.Text = device.DeviceName;
             textBox3.Text = device.DeviceAddress.ToString();
+            textBox4.Text = device.Authenticated.ToString();
 
         }
 
@@ -95,5 +103,6 @@ namespace Bluetooth
             }
 
         }
+
     }
 }
