@@ -1,0 +1,13 @@
+D:\JB_Rider\Bluetooth\Bluetooth\bin\Debug\Bluetooth.exe.config
+D:\JB_Rider\Bluetooth\Bluetooth\bin\Debug\Bluetooth.exe
+D:\JB_Rider\Bluetooth\Bluetooth\bin\Debug\Bluetooth.pdb
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.csprojAssemblyReference.cache
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.Properties.Resources.resources
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.csproj.GenerateResource.cache
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.csproj.CoreCompileInputs.cache
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.exe
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.pdb
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.Form1.resources
+D:\JB_Rider\Bluetooth\Bluetooth\bin\Debug\InTheHand.Net.Personal.dll
+D:\JB_Rider\Bluetooth\Bluetooth\bin\Debug\InTheHand.Net.Personal.xml
+D:\JB_Rider\Bluetooth\Bluetooth\obj\Debug\Bluetooth.csproj.CopyComplete
