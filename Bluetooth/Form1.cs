@@ -67,21 +67,31 @@ namespace Bluetooth
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string filePath = textBox2.Text;
-            string fileName;
 
-            BluetoothDeviceInfo device = (BluetoothDeviceInfo) listBox1.SelectedItem;
-            
-            Uri uri = new Uri("obex://" + device.DeviceAddress + "/" + filePath);
-         
-            ObexWebRequest newRequest = new ObexWebRequest(uri);
-            newRequest.ReadFile(filePath);
+            if (textBox2.Text != String.Empty)
+            {
 
-            ObexWebResponse response = (ObexWebResponse)newRequest.GetResponse();
+                string filePath = textBox2.Text;
+                string fileName;
 
-            response.Close();
+                BluetoothDeviceInfo device = (BluetoothDeviceInfo) listBox1.SelectedItem;
 
-            MessageBox.Show(response.StatusCode.ToString());
+                Uri uri = new Uri("obex://" + device.DeviceAddress + "/" + filePath);
+
+                ObexWebRequest newRequest = new ObexWebRequest(uri);
+                newRequest.ReadFile(filePath);
+
+                ObexWebResponse response = (ObexWebResponse) newRequest.GetResponse();
+
+                response.Close();
+
+                MessageBox.Show(response.StatusCode.ToString());
+
+            }
+            else
+            {
+                MessageBox.Show("Nie podano sciezki do wysylanego pliku!");
+            }
 
         }
     }
