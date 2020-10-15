@@ -1,0 +1,17 @@
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\usb_Camera.exe.config
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\usb_Camera.exe
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\usb_Camera.pdb
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb-Camera.csprojAssemblyReference.cache
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb_Camera.Properties.Resources.resources
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb-Camera.csproj.GenerateResource.cache
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb-Camera.csproj.CoreCompileInputs.cache
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb_Camera.exe
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb_Camera.pdb
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.DirectShow.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.DirectShow.xml
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb_Camera.Form1.resources
+D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb-Camera.csproj.CopyComplete
