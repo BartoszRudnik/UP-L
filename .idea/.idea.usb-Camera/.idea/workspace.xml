@@ -22,103 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da398456-5229-447e-945a-c19ea3176c7c" name="Default Changelist" comment="start &amp; stop camera, saving pictures from camera">
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.2.2.5/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.2.2.5/AForge.Imaging.2.2.5.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.2.2.5/lib/AForge.Imaging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.2.2.5/lib/AForge.Imaging.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Controls.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Controls.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.DebuggerVisualizers (2010).dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Fuzzy.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Fuzzy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Genetic.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Genetic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.Formats.2.2.5.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.Formats.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.Formats.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.IPPrototyper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Imaging.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.MachineLearning.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.MachineLearning.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Math.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Math.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Neuro.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Neuro.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.Lego.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.Lego.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.Surveyor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.Surveyor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.TeRK.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Robotics.TeRK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.DirectShow.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.DirectShow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.FFMPEG.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.FFMPEG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.Kinect.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.Kinect.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.VFW.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.VFW.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.Ximea.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.Ximea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Video.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Vision.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.Vision.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/AForge.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/IPPrototyper.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/lib/AForge.Imaging.Formats.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/lib/AForge.Imaging.Formats.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Imaging.Formats.2.2.5/nuget.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Math.2.2.5/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Math.2.2.5/AForge.Math.2.2.5.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Math.2.2.5/lib/AForge.Math.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Math.2.2.5/lib/AForge.Math.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/AForge.Video.FFMPEG.2.2.5.1-rc.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/avcodec-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/avdevice-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/avfilter-2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/avformat-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/avutil-51.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/postproc-52.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/swresample-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/Externals/swscale-2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/lib/AForge.Video.FFMPEG.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/lib/AForge.Video.FFMPEG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/AForge.Video.FFMPEG.2.2.5.1-rc/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Imaging.Formats.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Imaging.Formats.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Imaging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Imaging.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Math.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Math.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Video.FFMPEG.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/AForge.Video.FFMPEG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/avcodec-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/avdevice-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/avfilter-2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/avformat-53.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/avutil-51.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/postproc-52.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/swresample-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/swscale-2.dll" afterDir="false" />
+    <list default="true" id="da398456-5229-447e-945a-c19ea3176c7c" name="Default Changelist" comment="recording video">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.usb-Camera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.usb-Camera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usb-Camera/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/App.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usb-Camera/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/Form1.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb-Camera.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb_Camera.exe" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb_Camera.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb_Camera.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/obj/Debug/usb_Camera.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usb-Camera/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/packages.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/usb-Camera.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/usb-Camera.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +103,7 @@
       <updated>1602797148710</updated>
       <workItem from="1602797166117" duration="2731000" />
       <workItem from="1602800280904" duration="2544000" />
-      <workItem from="1602844750715" duration="7515000" />
+      <workItem from="1602844750715" duration="12155000" />
     </task>
     <task id="LOCAL-00001" summary="start &amp; stop camera, saving pictures from camera">
       <created>1602802837922</created>
@@ -197,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602802837922</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="recording video">
+      <created>1602852448617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602852448617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,40 +143,43 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="start &amp; stop camera, saving pictures from camera" />
-    <option name="LAST_COMMIT_MESSAGE" value="start &amp; stop camera, saving pictures from camera" />
+    <MESSAGE value="recording video" />
+    <option name="LAST_COMMIT_MESSAGE" value="recording video" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1602852283517">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1602857463686">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602852283517" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602802861436" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1602852283517">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602857463686" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1602857463686">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602852283517" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602802861435" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1602852283517">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602857463686" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1602857463686">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602852283517" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602802861435" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1602852283517">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602857463686" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1602857463686">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602852283517" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602802861436" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602857463686" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
     <state x="2197" y="77" key="SettingsEditor" timestamp="1602850700450">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2197" y="77" key="SettingsEditor/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602850700450" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602802847390">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602852454000">
+      <screen x="1920" y="0" width="1536" height="864" />
     </state>
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602852454000" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1602802847390" />
-    <state x="586" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602802785499">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="2506" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602855758267">
+      <screen x="1920" y="0" width="1536" height="864" />
     </state>
+    <state x="2506" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602855758267" />
     <state x="586" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1602802785499" />
   </component>
 </project>

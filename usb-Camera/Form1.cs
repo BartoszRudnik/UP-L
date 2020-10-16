@@ -28,7 +28,12 @@ namespace usb_Camera
         private SaveFileDialog saveFile;
         private VideoFileWriter writer;
         private bool recording = false;
-        private DateTime? startTime;
+        private int nasycenie;
+        private int jasnosc;
+        private int kontrast;
+        private BrightnessCorrection brightness;
+        private SaturationCorrection saturation;
+        private ContrastCorrection contrast;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -54,11 +59,22 @@ namespace usb_Camera
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs e)
         {
             
-            pictureBox1.Image = (Bitmap) e.Frame.Clone();
+           Bitmap image = (Bitmap) e.Frame.Clone();
+            
+            brightness = new BrightnessCorrection(jasnosc);
+            image = brightness.Apply((Bitmap) image.Clone());
+
+            saturation = new SaturationCorrection(nasycenie);
+            image = saturation.Apply((Bitmap) image.Clone());
+            
+            contrast = new ContrastCorrection(kontrast);
+            image = contrast.Apply((Bitmap) image.Clone());
+            
+            pictureBox1.Image = image;
             
             if (recording == true)
             {
-                writer.WriteVideoFrame((Bitmap) e.Frame.Clone());
+                writer.WriteVideoFrame(image);
             }
             
         }
@@ -119,9 +135,7 @@ namespace usb_Camera
             saveFile.AddExtension = true;
 
             saveFile.ShowDialog();
-            
-            startTime = null;
-            
+
             writer.Open(saveFile.FileName, pictureBox1.Image.Width, pictureBox1.Image.Height);
             recording = true;
             
@@ -131,6 +145,39 @@ namespace usb_Camera
         {
                 recording = false;
                 writer.Close();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            nasycenie = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            jasnosc = trackBar2.Value;
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            kontrast = trackBar3.Value;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            trackBar1.Value = 0;
+            nasycenie = trackBar1.Value;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            trackBar2.Value = 0;
+            jasnosc = trackBar2.Value;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            trackBar3.Value = 0;
+            kontrast = trackBar3.Value;
         }
     }
     
