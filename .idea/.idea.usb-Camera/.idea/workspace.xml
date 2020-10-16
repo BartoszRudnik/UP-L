@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da398456-5229-447e-945a-c19ea3176c7c" name="Default Changelist" comment="motion detection">
+    <list default="true" id="da398456-5229-447e-945a-c19ea3176c7c" name="Default Changelist" comment="motion detection -&gt; fix">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.usb-Camera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.usb-Camera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usb-Camera/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/usb-Camera/bin/Debug/usb_Camera.pdb" afterDir="false" />
@@ -102,7 +101,7 @@
       <workItem from="1602844750715" duration="16999000" />
       <workItem from="1602863408336" duration="332000" />
       <workItem from="1602863805428" duration="721000" />
-      <workItem from="1602864628808" duration="2390000" />
+      <workItem from="1602864628808" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="start &amp; stop camera, saving pictures from camera">
       <created>1602802837922</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602866394661</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="motion detection -&gt; fix">
+      <created>1602867052678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602867052679</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,37 +173,38 @@
     <MESSAGE value="image settings" />
     <MESSAGE value="possibility to change resolution" />
     <MESSAGE value="motion detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="motion detection" />
+    <MESSAGE value="motion detection -&gt; fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="motion detection -&gt; fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1602866953023">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1602868878146">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602866953023" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602868878146" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1602866953022">
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1602868878145">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602866953022" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602868878145" />
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1602866953022">
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1602868878145">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602866953022" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602868878145" />
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1602866953022">
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1602868878145">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602866953022" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602868878145" />
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602854777676" />
     <state x="2197" y="77" key="SettingsEditor" timestamp="1602850700450">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2197" y="77" key="SettingsEditor/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602850700450" />
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602866396532">
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602867057031">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602866396532" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1602867057031" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1602802847390" />
     <state x="2506" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602864655314">
       <screen x="1920" y="0" width="1536" height="864" />

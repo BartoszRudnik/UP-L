@@ -91,19 +91,19 @@ namespace usb_Camera
             {
                 writer.WriteVideoFrame(image);
             }
-
+    
             if(detecting)
             {
-                if (motionDetector.ProcessFrame(image) > 0.02)
-                {
-                    textBox4.Text = "Wykryto ruch";
-                    pictureBox1.Image = image;
-                }
-                else
-                {
-                    textBox4.Text = "Brak ruchu";
-                    pictureBox1.Image = image;
-                }
+               if (motionDetector.ProcessFrame(image) > 0.05)
+                    {
+                        textBox4.Text = "Wykryto ruch";
+                        pictureBox1.Image = image;
+                    }
+                    else
+                    {
+                        textBox4.Text = "Brak ruchu";
+                        pictureBox1.Image = image;
+                    }
             }
             else
             {
