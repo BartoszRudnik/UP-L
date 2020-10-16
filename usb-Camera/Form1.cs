@@ -169,7 +169,7 @@ namespace usb_Camera
             saveFile.AddExtension = true;
 
             saveFile.ShowDialog();
-
+            
             writer.Open(saveFile.FileName, pictureBox1.Image.Width, pictureBox1.Image.Height);
             recording = true;
             
