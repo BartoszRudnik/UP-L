@@ -51,6 +51,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.Rozdzielczosc = new System.Windows.Forms.ListBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).BeginInit();
@@ -253,11 +256,41 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // Rozdzielczosc
+            // 
+            this.Rozdzielczosc.FormattingEnabled = true;
+            this.Rozdzielczosc.ItemHeight = 16;
+            this.Rozdzielczosc.Location = new System.Drawing.Point(946, 298);
+            this.Rozdzielczosc.Name = "Rozdzielczosc";
+            this.Rozdzielczosc.Size = new System.Drawing.Size(275, 180);
+            this.Rozdzielczosc.TabIndex = 21;
+            this.Rozdzielczosc.SelectedIndexChanged += new System.EventHandler(this.Rozdzielczosc_SelectedIndexChanged);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(946, 484);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(155, 23);
+            this.button10.TabIndex = 22;
+            this.button10.Text = "Zmien rozdzielczosc";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1107, 484);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 22);
+            this.textBox2.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 570);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.Rozdzielczosc);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button2);
@@ -290,6 +323,12 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.TextBox textBox2;
+
+        private System.Windows.Forms.Button button10;
+
+        private System.Windows.Forms.ListBox Rozdzielczosc;
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button8;

@@ -34,6 +34,7 @@ namespace usb_Camera
         private BrightnessCorrection brightness;
         private SaturationCorrection saturation;
         private ContrastCorrection contrast;
+        private int index;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -54,12 +55,20 @@ namespace usb_Camera
             newVideo = new VideoCaptureDevice(filterDevices[comboBox1.SelectedIndex].MonikerString);
             newVideo.NewFrame += VideoCaptureDevice_NewFrame;
             newVideo.Start();
+            
+            for (int i = 0; i < newVideo.VideoCapabilities.Length; i++)
+            {
+                string resolution = Convert.ToString(i);
+                string resolution_size = newVideo.VideoCapabilities[i].FrameSize.ToString();
+                Rozdzielczosc.Items.Add(resolution + ". " + resolution_size);
+            }
+            
         }
 
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs e)
         {
-            
-           Bitmap image = (Bitmap) e.Frame.Clone();
+
+            Bitmap image = (Bitmap) e.Frame.Clone();
             
             brightness = new BrightnessCorrection(jasnosc);
             image = brightness.Apply((Bitmap) image.Clone());
@@ -95,6 +104,7 @@ namespace usb_Camera
                 newVideo.SignalToStop();
                 newVideo.WaitForStop();
                 pictureBox1.Image = null;
+                Rozdzielczosc.Items.Clear();
             }
         }
 
@@ -178,6 +188,23 @@ namespace usb_Camera
         {
             trackBar3.Value = 0;
             kontrast = trackBar3.Value;
+        }
+
+        private void Rozdzielczosc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            index = Rozdzielczosc.SelectedIndex;
+            textBox2.Text = index.ToString();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            newVideo.SignalToStop();
+            newVideo.WaitForStop();
+            pictureBox1.Image = null;
+            newVideo = new VideoCaptureDevice(filterDevices[comboBox1.SelectedIndex].MonikerString);
+            newVideo.NewFrame += VideoCaptureDevice_NewFrame;
+            newVideo.VideoResolution = newVideo.VideoCapabilities[index];
+            newVideo.Start();
         }
     }
     
