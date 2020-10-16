@@ -15,3 +15,11 @@ D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.xml
 D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.DirectShow.xml
 D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb_Camera.Form1.resources
 D:\JB_Rider\usb-Camera\usb-Camera\obj\Debug\usb-Camera.csproj.CopyComplete
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.Formats.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Math.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.FFMPEG.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.Formats.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Math.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.FFMPEG.xml

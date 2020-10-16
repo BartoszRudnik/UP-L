@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using AForge.Imaging.Filters;
+using AForge.Video.FFMPEG;
 
 namespace usb_Camera
 {
@@ -23,6 +25,10 @@ namespace usb_Camera
         private VideoCaptureDevice newVideo;
         private FolderBrowserDialog folderBrowser;
         private string savePath;
+        private SaveFileDialog saveFile;
+        private VideoFileWriter writer;
+        private bool recording = false;
+        private DateTime? startTime;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -41,14 +47,20 @@ namespace usb_Camera
         private void button3_Click(object sender, EventArgs e)
         { 
             newVideo = new VideoCaptureDevice(filterDevices[comboBox1.SelectedIndex].MonikerString);
-
             newVideo.NewFrame += VideoCaptureDevice_NewFrame;
             newVideo.Start();
         }
 
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs e)
         {
+            
             pictureBox1.Image = (Bitmap) e.Frame.Clone();
+            
+            if (recording == true)
+            {
+                writer.WriteVideoFrame((Bitmap) e.Frame.Clone());
+            }
+            
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -96,7 +108,30 @@ namespace usb_Camera
                 MessageBox.Show("Nie podano sciezki do zapisu pliku");
             }
         }
-        
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            saveFile = new SaveFileDialog();
+            writer = new VideoFileWriter();
+
+            saveFile.FileName = "recordedVideo";
+            saveFile.DefaultExt = ".avi";
+            saveFile.AddExtension = true;
+
+            saveFile.ShowDialog();
+            
+            startTime = null;
+            
+            writer.Open(saveFile.FileName, pictureBox1.Image.Width, pictureBox1.Image.Height);
+            recording = true;
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+                recording = false;
+                writer.Close();
+        }
     }
     
 }
