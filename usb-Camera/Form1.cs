@@ -11,6 +11,7 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using AForge.Imaging.Filters;
 using AForge.Video.FFMPEG;
+using AForge.Vision.Motion;
 
 namespace usb_Camera
 {
@@ -35,6 +36,7 @@ namespace usb_Camera
         private SaturationCorrection saturation;
         private ContrastCorrection contrast;
         private int index;
+        private MotionDetector motionDetector;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -51,10 +53,13 @@ namespace usb_Camera
         }
         
         private void button3_Click(object sender, EventArgs e)
-        { 
+        {
+                   
             newVideo = new VideoCaptureDevice(filterDevices[comboBox1.SelectedIndex].MonikerString);
             newVideo.NewFrame += VideoCaptureDevice_NewFrame;
             newVideo.Start();
+            
+            motionDetector = new MotionDetector(new SimpleBackgroundModelingDetector(), new MotionAreaHighlighting());
             
             for (int i = 0; i < newVideo.VideoCapabilities.Length; i++)
             {
@@ -78,12 +83,21 @@ namespace usb_Camera
             
             contrast = new ContrastCorrection(kontrast);
             image = contrast.Apply((Bitmap) image.Clone());
-            
-            pictureBox1.Image = image;
-            
+
             if (recording == true)
             {
                 writer.WriteVideoFrame(image);
+            }
+
+            if (motionDetector.ProcessFrame(image) > 0.02)
+            {
+                textBox4.Text = "Wykryto ruch";
+                pictureBox1.Image = image;
+            }
+            else
+            {
+                textBox4.Text = "Brak ruchu";
+                pictureBox1.Image = image;
             }
             
         }
@@ -200,10 +214,11 @@ namespace usb_Camera
         {
             newVideo.SignalToStop();
             newVideo.WaitForStop();
-            pictureBox1.Image = null;
+            pictureBox1.Image = null; 
             newVideo = new VideoCaptureDevice(filterDevices[comboBox1.SelectedIndex].MonikerString);
             newVideo.NewFrame += VideoCaptureDevice_NewFrame;
             newVideo.VideoResolution = newVideo.VideoCapabilities[index];
+            motionDetector = new MotionDetector(new SimpleBackgroundModelingDetector(), new MotionAreaHighlighting());
             newVideo.Start();
         }
     }

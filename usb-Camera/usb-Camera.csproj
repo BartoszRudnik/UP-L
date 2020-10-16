@@ -61,9 +61,17 @@
           <HintPath>..\packages\AForge.Video.FFMPEG.2.2.5.1-rc\lib\AForge.Video.FFMPEG.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="AForge.Vision, Version=2.2.5.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06">
+          <HintPath>..\packages\AForge.Vision.2.2.5\lib\AForge.Vision.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="OzekiSDK, Version=1.10.0.0, Culture=neutral, PublicKeyToken=4812fb35129b8487">
+          <HintPath>C:\Users\Barto\OneDrive\Dokumenty\Ozeki\Ozeki SDK\Examples\Resources\NET4\OzekiSDK.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Web" />
+        <Reference Include="System.Web.Mobile" />
         <Reference Include="System.Xml.Linq" />
         <Reference Include="System.Data.DataSetExtensions" />
         <Reference Include="Microsoft.CSharp" />

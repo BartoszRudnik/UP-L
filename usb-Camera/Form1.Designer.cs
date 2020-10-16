@@ -54,6 +54,9 @@
             this.Rozdzielczosc = new System.Windows.Forms.ListBox();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Web.UI.MobileControls.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).BeginInit();
@@ -62,7 +65,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 514);
+            this.button1.Location = new System.Drawing.Point(9, 627);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 44);
             this.button1.TabIndex = 0;
@@ -72,15 +75,15 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(761, 489);
+            this.label1.Location = new System.Drawing.Point(731, 623);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 44);
+            this.label1.Size = new System.Drawing.Size(128, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Lokalizacja pliku";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(697, 536);
+            this.textBox1.Location = new System.Drawing.Point(694, 649);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(211, 22);
             this.textBox1.TabIndex = 3;
@@ -105,13 +108,13 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(928, 428);
+            this.pictureBox1.Size = new System.Drawing.Size(928, 549);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(344, 514);
+            this.button3.Location = new System.Drawing.Point(341, 627);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 44);
             this.button3.TabIndex = 7;
@@ -121,7 +124,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(425, 514);
+            this.button4.Location = new System.Drawing.Point(422, 627);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 44);
             this.button4.TabIndex = 8;
@@ -131,7 +134,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(570, 514);
+            this.button5.Location = new System.Drawing.Point(567, 627);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(121, 44);
             this.button5.TabIndex = 9;
@@ -141,7 +144,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(93, 514);
+            this.button6.Location = new System.Drawing.Point(90, 627);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(92, 44);
             this.button6.TabIndex = 10;
@@ -151,7 +154,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(191, 514);
+            this.button7.Location = new System.Drawing.Point(188, 627);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(103, 44);
             this.button7.TabIndex = 11;
@@ -283,11 +286,34 @@
             this.textBox2.Size = new System.Drawing.Size(114, 22);
             this.textBox2.TabIndex = 23;
             // 
+            // textBox3
+            // 
+            this.textBox3.DeviceSpecific = null;
+            this.textBox3.ID = null;
+            this.textBox3.Text = "textBox3";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(1080, 571);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(141, 22);
+            this.textBox4.TabIndex = 24;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(946, 570);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 23);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Detekcja ruchu";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 570);
+            this.ClientSize = new System.Drawing.Size(1242, 680);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.Rozdzielczosc);
@@ -323,6 +349,10 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label8;
+        private System.Web.UI.MobileControls.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
 
         private System.Windows.Forms.TextBox textBox2;
 

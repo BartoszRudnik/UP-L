@@ -23,3 +23,5 @@ D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.xml
 D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Imaging.Formats.xml
 D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Math.xml
 D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Video.FFMPEG.xml
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Vision.dll
+D:\JB_Rider\usb-Camera\usb-Camera\bin\Debug\AForge.Vision.xml
