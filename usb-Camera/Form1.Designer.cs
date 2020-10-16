@@ -57,6 +57,8 @@
             this.textBox3 = new System.Web.UI.MobileControls.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).BeginInit();
@@ -294,24 +296,46 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(1080, 571);
+            this.textBox4.Location = new System.Drawing.Point(1067, 571);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(141, 22);
+            this.textBox4.Size = new System.Drawing.Size(154, 22);
             this.textBox4.TabIndex = 24;
             // 
             // label8
             // 
             this.label8.Location = new System.Drawing.Point(946, 570);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 23);
+            this.label8.Size = new System.Drawing.Size(115, 23);
             this.label8.TabIndex = 25;
             this.label8.Text = "Detekcja ruchu";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(946, 625);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(115, 48);
+            this.button11.TabIndex = 26;
+            this.button11.Text = "Wlacz detekcje ruchu";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(1067, 627);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(154, 46);
+            this.button12.TabIndex = 27;
+            this.button12.Text = "Wylacz detekcje ruchu";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 680);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
@@ -349,6 +373,9 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
 
         private System.Windows.Forms.Label label8;
         private System.Web.UI.MobileControls.TextBox textBox3;

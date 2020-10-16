@@ -29,6 +29,7 @@ namespace usb_Camera
         private SaveFileDialog saveFile;
         private VideoFileWriter writer;
         private bool recording = false;
+        private bool detecting = false;
         private int nasycenie;
         private int jasnosc;
         private int kontrast;
@@ -49,6 +50,8 @@ namespace usb_Camera
 
             if(comboBox1.Items.Count > 0)
                 comboBox1.SelectedIndex = 0;
+
+            textBox4.Text = "Detekcja wylaczona";
 
         }
         
@@ -89,17 +92,24 @@ namespace usb_Camera
                 writer.WriteVideoFrame(image);
             }
 
-            if (motionDetector.ProcessFrame(image) > 0.02)
+            if(detecting)
             {
-                textBox4.Text = "Wykryto ruch";
-                pictureBox1.Image = image;
+                if (motionDetector.ProcessFrame(image) > 0.02)
+                {
+                    textBox4.Text = "Wykryto ruch";
+                    pictureBox1.Image = image;
+                }
+                else
+                {
+                    textBox4.Text = "Brak ruchu";
+                    pictureBox1.Image = image;
+                }
             }
             else
             {
-                textBox4.Text = "Brak ruchu";
                 pictureBox1.Image = image;
             }
-            
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -220,6 +230,17 @@ namespace usb_Camera
             newVideo.VideoResolution = newVideo.VideoCapabilities[index];
             motionDetector = new MotionDetector(new SimpleBackgroundModelingDetector(), new MotionAreaHighlighting());
             newVideo.Start();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            detecting = true;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            detecting = false;
+            textBox4.Text = "Detekcja wylaczona";
         }
     }
     
