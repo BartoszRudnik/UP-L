@@ -46,6 +46,11 @@ namespace JoyStick
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            textBox1.Text = "0 razy";
+            textBox2.Text = "0 razy";
+            textBox4.Text = "Wylaczony";
+            
             foreach (DeviceInstance newDevice in directInput.GetDevices(DeviceClass.GameController, DeviceEnumerationFlags.AttachedOnly))
             {
                 
@@ -150,8 +155,8 @@ namespace JoyStick
             if (joystickButtons[2] == true)
             {
 
+                textBox4.Text = "Wylaczony";
                 timer1.Enabled = false;
-                
                 clearCountBoxes();
 
             }
@@ -173,8 +178,7 @@ namespace JoyStick
         private void button1_Click(object sender, EventArgs e)
         {
 
-            clearCountBoxes();
-            
+            textBox4.Text = "Wlaczony";
             timer1.Enabled = true;
 
         }
@@ -215,7 +219,37 @@ namespace JoyStick
             painting = true;
             xPaint = e.X;
             yPaint = e.Y;
+            
+        }
 
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel2.BackColor;
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel3.BackColor;
+        }
+
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel4.BackColor;
+        }
+
+        private void panel6_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel6.BackColor;
+        }
+
+        private void panel5_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel5.BackColor;
+        }
+
+        private void panel7_MouseDown(object sender, MouseEventArgs e)
+        {
+            pen.Color = panel7.BackColor;
         }
     }
     
