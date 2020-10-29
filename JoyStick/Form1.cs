@@ -21,6 +21,8 @@ namespace JoyStick
         private bool[] joystickButtons;
         private bool leftClick = false;
         private bool rightClick = false;
+        private int countLeft = 0;
+        private int countRight = 0;
         
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern void mouse_event(uint flag, uint _x, uint _y, uint btn, uint exinfo);
@@ -74,35 +76,62 @@ namespace JoyStick
 
             JoystickState state = newStick.GetCurrentState();
             joystickButtons = state.GetButtons();
-            
-            Cursor.Position = new Point(Cursor.Position.X + state.X/3, Cursor.Position.Y + state.Y/3);
 
+            double actualX = Cursor.Position.X + state.X / 6;
+            double actualY = Cursor.Position.Y + state.Y / 6;
+            
+            Cursor.Position = new Point(Cursor.Position.X + state.X/6, Cursor.Position.Y + state.Y/6);
+
+            textBox3.Text = "X: " + actualX.ToString() + " Y: " + actualY.ToString();
+            
             if (joystickButtons[0] == true)
             {
-                
-                mouse_event(MOUSEEVENT_LEFTDOWN,0,0,0,0);
+
                 leftClick = true;
+                mouse_event(MOUSEEVENT_LEFTDOWN,0,0,0,0);
 
             }
 
-            if (leftClick == true)
+            if (leftClick == true && joystickButtons[0] == false)
             {
+                
+                countLeft++;
+                textBox1.Text = countLeft.ToString();
+
+                if (countLeft == 1)
+                    textBox1.Text += " raz";
+                else
+                {
+                    textBox1.Text += " razy";
+                }
                 
                 mouse_event(MOUSEEVENT_LEFTUP,0,0,0,0);
                 leftClick = false;
-                
+
             }
 
             if (joystickButtons[1] == true)
             {
                 
-                mouse_event(MOUSEEVENT_RIGHTDOWN, 0, 0, 0, 0);
                 rightClick = true;
+                mouse_event(MOUSEEVENT_RIGHTDOWN, 0, 0, 0, 0);
 
             }
 
-            if (rightClick == true)
+            if (rightClick == true && joystickButtons[1] == false)
             {
+                
+                countRight++;
+                textBox2.Text = countRight.ToString();
+
+                if (countRight == 1)
+                {
+                    textBox2.Text += " raz";
+                }
+                else
+                {
+                    textBox2.Text += " razy";
+                }
                 
                 mouse_event(MOUSEEVENT_RIGHTUP, 0, 0 ,0 ,0);
                 rightClick = false;
@@ -113,23 +142,41 @@ namespace JoyStick
             {
 
                 timer1.Enabled = false;
+                
+                clearCountBoxes();
 
             }
 
         }
 
+        private void clearCountBoxes()
+        {
+            
+            countLeft = 0;
+            countRight = 0;
+            
+            textBox1.Text = "0 razy";
+            textBox2.Text = "0 razy";
+            textBox3.Clear();
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show(
-                "Przycisk '1' -> lewy przycisk myszki, \nPrzycisk '2' -> prawy przycisk myszki \nPrzycisk '3' -> zakoncz symulowanie");
-                
+            clearCountBoxes();
+            
             timer1.Enabled = true;
 
         }
         private void timer1_Elapsed(object sender, ElapsedEventArgs e)
         {
             simulateMouse();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Przycisk '1' -> lewy przycisk myszki, \nPrzycisk '2' -> prawy przycisk myszki \nPrzycisk '3' -> zakoncz symulowanie");
         }
     }
     
