@@ -4,7 +4,7 @@
     <projectFile>JoyStick/JoyStick.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="obsluga lewego i prawego przycisku myszki za pomoca joysticka">
+    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="zlicza ilosc klikniec prawego i lewego przycisku oraz pokazuje aktualna pozycje kursora">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JoyStick/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.cs" afterDir="false" />
@@ -72,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603964790228</updated>
       <workItem from="1603964806012" duration="3034000" />
-      <workItem from="1603969449329" duration="12016000" />
+      <workItem from="1603969449329" duration="17076000" />
     </task>
     <task id="LOCAL-00001" summary="wykrywanie urzadzen, poruszanie kursorem przy pomocy galek joysticka">
       <created>1603976779494</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603978434144</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="zlicza ilosc klikniec prawego i lewego przycisku oraz pokazuje aktualna pozycje kursora">
+      <created>1603985542364</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603985542364</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,32 +107,33 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="wykrywanie urzadzen, poruszanie kursorem przy pomocy galek joysticka" />
     <MESSAGE value="obsluga lewego i prawego przycisku myszki za pomoca joysticka" />
-    <option name="LAST_COMMIT_MESSAGE" value="obsluga lewego i prawego przycisku myszki za pomoca joysticka" />
+    <MESSAGE value="zlicza ilosc klikniec prawego i lewego przycisku oraz pokazuje aktualna pozycje kursora" />
+    <option name="LAST_COMMIT_MESSAGE" value="zlicza ilosc klikniec prawego i lewego przycisku oraz pokazuje aktualna pozycje kursora" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2567" y="234" width="329" height="299" key="Github.ShareDialog" timestamp="1603976811601">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2567" y="234" width="329" height="299" key="Github.ShareDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603976811601" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1603985273711">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1603990567394">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603985273711" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1603985273711">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603990567394" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1603990567394">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603985273711" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1603985273711">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603990567394" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1603990567394">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603985273711" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1603985273711">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603990567394" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1603990567394">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603985273711" />
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603978440786">
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603990567394" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603985545687">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603978440786" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603985545687" />
   </component>
 </project>

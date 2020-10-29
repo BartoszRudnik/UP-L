@@ -15,14 +15,20 @@ namespace JoyStick
 {
     public partial class Form1 : Form
     {
+
+        private Pen pen;
+        private Graphics g;
         private DirectInput directInput = new DirectInput();
         private SlimDX.DirectInput.Joystick newStick;
         private List <Joystick> sticks = new List<Joystick>();
         private bool[] joystickButtons;
         private bool leftClick = false;
         private bool rightClick = false;
+        private bool painting = false;
         private int countLeft = 0;
         private int countRight = 0;
+        private int xPaint = 0;
+        private int yPaint = 0;
         
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern void mouse_event(uint flag, uint _x, uint _y, uint btn, uint exinfo);
@@ -34,6 +40,8 @@ namespace JoyStick
         public Form1()
         {
             InitializeComponent();
+            g = panel1.CreateGraphics();
+            pen = new Pen(Color.Black, 3);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -77,10 +85,10 @@ namespace JoyStick
             JoystickState state = newStick.GetCurrentState();
             joystickButtons = state.GetButtons();
 
-            double actualX = Cursor.Position.X + state.X / 6;
-            double actualY = Cursor.Position.Y + state.Y / 6;
+            int actualX = Cursor.Position.X + state.X / 6;
+            int actualY = Cursor.Position.Y + state.Y / 6;
             
-            Cursor.Position = new Point(Cursor.Position.X + state.X/6, Cursor.Position.Y + state.Y/6);
+            Cursor.Position = new Point(actualX, actualY);
 
             textBox3.Text = "X: " + actualX.ToString() + " Y: " + actualY.ToString();
             
@@ -88,7 +96,7 @@ namespace JoyStick
             {
 
                 leftClick = true;
-                mouse_event(MOUSEEVENT_LEFTDOWN,0,0,0,0);
+                mouse_event(MOUSEEVENT_LEFTDOWN, (uint) actualX, (uint) actualY,0,0);
 
             }
 
@@ -113,6 +121,7 @@ namespace JoyStick
             if (joystickButtons[1] == true)
             {
                 
+                panel1.Invalidate();
                 rightClick = true;
                 mouse_event(MOUSEEVENT_RIGHTDOWN, 0, 0, 0, 0);
 
@@ -176,7 +185,37 @@ namespace JoyStick
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Przycisk '1' -> lewy przycisk myszki, \nPrzycisk '2' -> prawy przycisk myszki \nPrzycisk '3' -> zakoncz symulowanie");
+            MessageBox.Show("Przycisk '1' -> lewy przycisk myszki, rysowanie \nPrzycisk '2' -> prawy przycisk myszki, czyszczenie rysunku \nPrzycisk '3' -> zakoncz symulowanie");
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (painting == true && xPaint != -1 && yPaint != -1)
+            {
+                
+                g.DrawLine(pen, new Point(xPaint, yPaint), new Point(xPaint + 1, yPaint + 1));
+
+                xPaint = e.X;
+                yPaint = e.Y;
+
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            
+            painting = false;
+            xPaint = -1;
+            yPaint = -1;
+            
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            painting = true;
+            xPaint = e.X;
+            yPaint = e.Y;
+
         }
     }
     
