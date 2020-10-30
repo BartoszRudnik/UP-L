@@ -155,7 +155,6 @@ namespace JoyStick
             if (joystickButtons[2] == true)
             {
 
-                textBox4.Text = "Wylaczony";
                 timer1.Enabled = false;
                 clearCountBoxes();
 
@@ -172,6 +171,7 @@ namespace JoyStick
             textBox1.Text = "0 razy";
             textBox2.Text = "0 razy";
             textBox3.Clear();
+            textBox4.Text = "Wylaczony";
             
         }
 
@@ -250,6 +250,14 @@ namespace JoyStick
         private void panel7_MouseDown(object sender, MouseEventArgs e)
         {
             pen.Color = panel7.BackColor;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            timer1.Enabled = false;
+            clearCountBoxes();
+
         }
     }
     

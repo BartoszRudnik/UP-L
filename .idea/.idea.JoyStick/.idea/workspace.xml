@@ -4,14 +4,9 @@
     <projectFile>JoyStick/JoyStick.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="rysowanie za pomoca joysticka">
+    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="zmiana kolory rysowania, refactor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/obj/Debug/JoyStick.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603964790228</updated>
       <workItem from="1603964806012" duration="3034000" />
-      <workItem from="1603969449329" duration="18551000" />
+      <workItem from="1603969449329" duration="18857000" />
+      <workItem from="1604062632299" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="wykrywanie urzadzen, poruszanie kursorem przy pomocy galek joysticka">
       <created>1603976779494</created>
@@ -104,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603990818532</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="zmiana kolory rysowania, refactor">
+      <created>1603992402467</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603992402467</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,32 +121,33 @@
     <MESSAGE value="obsluga lewego i prawego przycisku myszki za pomoca joysticka" />
     <MESSAGE value="zlicza ilosc klikniec prawego i lewego przycisku oraz pokazuje aktualna pozycje kursora" />
     <MESSAGE value="rysowanie za pomoca joysticka" />
-    <option name="LAST_COMMIT_MESSAGE" value="rysowanie za pomoca joysticka" />
+    <MESSAGE value="zmiana kolory rysowania, refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmiana kolory rysowania, refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2567" y="234" width="329" height="299" key="Github.ShareDialog" timestamp="1603976811601">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2567" y="234" width="329" height="299" key="Github.ShareDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603976811601" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1603992080227">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1604062771718">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603992080227" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1603992080227">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604062771718" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1604062771717">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603992080227" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1603992080227">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604062771717" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1604062771717">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603992080227" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1603992080227">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604062771717" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1604062771717">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603992080227" />
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603990822906">
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604062771717" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603992406502">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603990822906" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603992406502" />
   </component>
 </project>
