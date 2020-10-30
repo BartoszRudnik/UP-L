@@ -36,7 +36,7 @@ namespace JoyStick
         {
             InitializeComponent();
             g = panel1.CreateGraphics();
-            pen = new Pen(Color.Black, 3);
+            pen = new Pen(Color.Black, 5);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -192,7 +192,7 @@ namespace JoyStick
             if (painting && xPaint != -1 && yPaint != -1)
             {
                 
-                g.DrawLine(pen, new Point(xPaint, yPaint), new Point(xPaint + 1, yPaint + 1));
+                g.DrawLine(pen, new Point(xPaint, yPaint), new Point(xPaint, yPaint + 1));
 
                 xPaint = e.X;
                 yPaint = e.Y;
