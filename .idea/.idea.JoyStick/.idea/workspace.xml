@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="refactor">
+    <list default="true" id="a4bac73e-1b79-41b7-b151-ed3e6b16f549" name="Default Changelist" comment="ostatnie zmiany">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JoyStick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JoyStick/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JoyStick/bin/Debug/JoyStick.pdb" afterDir="false" />
@@ -97,7 +98,8 @@
       <workItem from="1603964806012" duration="3034000" />
       <workItem from="1603969449329" duration="18857000" />
       <workItem from="1604062632299" duration="313000" />
-      <workItem from="1604070578458" duration="3517000" />
+      <workItem from="1604070578458" duration="5273000" />
+      <workItem from="1604085590015" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="wykrywanie urzadzen, poruszanie kursorem przy pomocy galek joysticka">
       <created>1603976779494</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604071163951</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ostatnie zmiany">
+      <created>1604083508573</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604083508573</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +187,8 @@
     <MESSAGE value="zmiana kolory rysowania, refactor" />
     <MESSAGE value="ramka panel do rysowania" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="ostatnie zmiany" />
+    <option name="LAST_COMMIT_MESSAGE" value="ostatnie zmiany" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2265" y="77" key="#Inspection_severity" timestamp="1604071038543">
@@ -189,25 +199,25 @@
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2567" y="234" width="329" height="299" key="Github.ShareDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1603976811601" />
-    <state width="1493" height="232" key="GridCell.Tab.0.bottom" timestamp="1604083286687">
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom" timestamp="1604087080649">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604083286687" />
-    <state width="1493" height="232" key="GridCell.Tab.0.center" timestamp="1604083286687">
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604087080649" />
+    <state width="1493" height="232" key="GridCell.Tab.0.center" timestamp="1604087080649">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604083286687" />
-    <state width="1493" height="232" key="GridCell.Tab.0.left" timestamp="1604083286687">
+    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604087080649" />
+    <state width="1493" height="232" key="GridCell.Tab.0.left" timestamp="1604087080649">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604083286687" />
-    <state width="1493" height="232" key="GridCell.Tab.0.right" timestamp="1604083286687">
+    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604087080649" />
+    <state width="1493" height="232" key="GridCell.Tab.0.right" timestamp="1604087080649">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604083286687" />
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1604071257991">
+    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604087080649" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1604083511747">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604071257991" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1604083511747" />
   </component>
 </project>

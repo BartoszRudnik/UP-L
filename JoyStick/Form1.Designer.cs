@@ -51,7 +51,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.timer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -64,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 503);
+            this.button1.Location = new System.Drawing.Point(12, 629);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(218, 37);
             this.button1.TabIndex = 1;
@@ -88,7 +94,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 548);
+            this.button2.Location = new System.Drawing.Point(12, 674);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(218, 37);
             this.button2.TabIndex = 3;
@@ -146,9 +152,9 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(458, 0);
+            this.panel1.Location = new System.Drawing.Point(523, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 597);
+            this.panel1.Size = new System.Drawing.Size(464, 723);
             this.panel1.TabIndex = 11;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -233,7 +239,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(245, 503);
+            this.button3.Location = new System.Drawing.Point(245, 629);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 82);
             this.button3.TabIndex = 14;
@@ -241,11 +247,49 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(12, 567);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Minimum = -100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(136, 56);
+            this.trackBar1.TabIndex = 15;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(245, 567);
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Minimum = -100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(129, 56);
+            this.trackBar2.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(22, 532);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 23);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Oś X lewej galki";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(249, 532);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 23);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Oś Y lewej galki";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 597);
+            this.ClientSize = new System.Drawing.Size(987, 723);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
@@ -271,9 +315,16 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize) (this.timer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.trackBar2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
 
         private System.Windows.Forms.Button button3;
 

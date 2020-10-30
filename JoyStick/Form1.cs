@@ -85,6 +85,9 @@ namespace JoyStick
             JoystickState state = newStick.GetCurrentState();
             joystickButtons = state.GetButtons();
 
+            trackBar1.Value = state.X;
+            trackBar2.Value = state.Y;
+
             int actualX = Cursor.Position.X + state.X / 6;
             int actualY = Cursor.Position.Y + state.Y / 6;
             
