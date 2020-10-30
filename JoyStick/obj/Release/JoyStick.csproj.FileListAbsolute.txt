@@ -1,0 +1,12 @@
+D:\JB_Rider\JoyStick\JoyStick\bin\Release\JoyStick.exe.config
+D:\JB_Rider\JoyStick\JoyStick\bin\Release\JoyStick.exe
+D:\JB_Rider\JoyStick\JoyStick\bin\Release\JoyStick.pdb
+D:\JB_Rider\JoyStick\JoyStick\bin\Release\SlimDX.dll
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.csprojAssemblyReference.cache
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.Form1.resources
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.Properties.Resources.resources
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.csproj.GenerateResource.cache
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.csproj.CoreCompileInputs.cache
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.csproj.CopyComplete
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.exe
+D:\JB_Rider\JoyStick\JoyStick\obj\Release\JoyStick.pdb

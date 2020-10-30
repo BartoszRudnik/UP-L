@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 using SlimDX.DirectInput;
@@ -19,19 +14,19 @@ namespace JoyStick
         private Pen pen;
         private Graphics g;
         private DirectInput directInput = new DirectInput();
-        private SlimDX.DirectInput.Joystick newStick;
+        private Joystick newStick;
         private List <Joystick> sticks = new List<Joystick>();
         private bool[] joystickButtons;
-        private bool leftClick = false;
-        private bool rightClick = false;
-        private bool painting = false;
-        private int countLeft = 0;
-        private int countRight = 0;
-        private int xPaint = 0;
-        private int yPaint = 0;
+        private bool leftClick;
+        private bool rightClick;
+        private bool painting;
+        private int countLeft;
+        private int countRight;
+        private int xPaint;
+        private int yPaint;
         
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        public static extern void mouse_event(uint flag, uint _x, uint _y, uint btn, uint exinfo);
+        public static extern void mouse_event(uint flag, uint x, uint y, uint btn, uint exinfo);
         private const int MOUSEEVENT_LEFTDOWN = 0X02;
         private const int MOUSEEVENT_LEFTUP = 0X04;
         private const int MOUSEEVENT_RIGHTDOWN = 0X08;
@@ -54,14 +49,14 @@ namespace JoyStick
             foreach (DeviceInstance newDevice in directInput.GetDevices(DeviceClass.GameController, DeviceEnumerationFlags.AttachedOnly))
             {
                 
-                newStick = new SlimDX.DirectInput.Joystick(directInput, newDevice.InstanceGuid);
+                newStick = new Joystick(directInput, newDevice.InstanceGuid);
                 newStick.Acquire();
                 
-                foreach (DeviceObjectInstance DeviceObject in newStick.GetObjects())
+                foreach (DeviceObjectInstance deviceObject in newStick.GetObjects())
                 {
-                    if((DeviceObject.ObjectType & ObjectDeviceType.Axis) != 0)
+                    if((deviceObject.ObjectType & ObjectDeviceType.Axis) != 0)
                     {
-                        newStick.GetObjectPropertiesById((int)DeviceObject.ObjectType).SetRange(-100, 100);
+                        newStick.GetObjectPropertiesById((int)deviceObject.ObjectType).SetRange(-100, 100);
 
                     }
                 }
@@ -82,7 +77,7 @@ namespace JoyStick
             
         }
 
-        private void simulateMouse()
+        private void SimulateMouse()
         {
             
             newStick = sticks[comboBox1.SelectedIndex];
@@ -95,9 +90,9 @@ namespace JoyStick
             
             Cursor.Position = new Point(actualX, actualY);
 
-            textBox3.Text = "X: " + actualX.ToString() + " Y: " + actualY.ToString();
+            textBox3.Text = "X: " + actualX + " Y: " + actualY;
             
-            if (joystickButtons[0] == true)
+            if (joystickButtons[0])
             {
 
                 leftClick = true;
@@ -105,7 +100,7 @@ namespace JoyStick
 
             }
 
-            if (leftClick == true && joystickButtons[0] == false)
+            if (leftClick && !joystickButtons[0])
             {
                 
                 countLeft++;
@@ -123,7 +118,7 @@ namespace JoyStick
 
             }
 
-            if (joystickButtons[1] == true)
+            if (joystickButtons[1])
             {
                 
                 panel1.Invalidate();
@@ -132,7 +127,7 @@ namespace JoyStick
 
             }
 
-            if (rightClick == true && joystickButtons[1] == false)
+            if (rightClick && !joystickButtons[1])
             {
                 
                 countRight++;
@@ -152,17 +147,17 @@ namespace JoyStick
 
             }
 
-            if (joystickButtons[2] == true)
+            if (joystickButtons[2])
             {
 
                 timer1.Enabled = false;
-                clearCountBoxes();
+                ClearCountBoxes();
 
             }
 
         }
 
-        private void clearCountBoxes()
+        private void ClearCountBoxes()
         {
             
             countLeft = 0;
@@ -184,7 +179,7 @@ namespace JoyStick
         }
         private void timer1_Elapsed(object sender, ElapsedEventArgs e)
         {
-            simulateMouse();
+            SimulateMouse();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -194,7 +189,7 @@ namespace JoyStick
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (painting == true && xPaint != -1 && yPaint != -1)
+            if (painting && xPaint != -1 && yPaint != -1)
             {
                 
                 g.DrawLine(pen, new Point(xPaint, yPaint), new Point(xPaint + 1, yPaint + 1));
@@ -256,7 +251,7 @@ namespace JoyStick
         {
             
             timer1.Enabled = false;
-            clearCountBoxes();
+            ClearCountBoxes();
 
         }
     }
