@@ -9,7 +9,9 @@ using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
+using NAudio.CoreAudioApi;
 using NAudio.Wave;
 using SharpDX;
 using SharpDX.Multimedia;
@@ -26,7 +28,7 @@ namespace KartaMuzyczna
         private SoundPlayer soundPlayer;
         private WindowsMediaPlayer windowsPlayer;
         private WaveOut waveOut;
-        private XAudio2 device;
+        private XAudio2 xAudio2;
         private SoundStream soundStream;
         private SourceVoice sourceVoice;
         private MasteringVoice masteringVoice;
@@ -34,6 +36,7 @@ namespace KartaMuzyczna
         private String saveFile;
         private WaveIn waveIn;
         private WaveFileWriter fileWriter;
+        private int directSoundEffect = -1;
 
         public Form1()
         {
@@ -89,7 +92,7 @@ namespace KartaMuzyczna
                 String dataString = Encoding.Default.GetString(data);
 
                 textBox1.Text += "\r\n dataStart: ";
-                textBox1.Text += dataString.Substring(0, 4);
+                textBox1.Text += dataString;
                 textBox1.Text += "\r\n dataSize: ";
                 textBox1.Text += reader.ReadInt32();
                 
@@ -255,9 +258,25 @@ namespace KartaMuzyczna
             
             soundStream.Close();
             
-            sourceVoice = new SourceVoice(device, format, true);
+            sourceVoice = new SourceVoice(xAudio2, format, true);
             sourceVoice.SubmitSourceBuffer(buffer, soundStream.DecodedPacketsInfo);
             sourceVoice.Start();
+
+            if (directSoundEffect == 0)
+            {
+                SharpDX.XAPO.Fx.Echo effectEcho = new SharpDX.XAPO.Fx.Echo(xAudio2);   
+                EffectDescriptor effectDescriptor = new EffectDescriptor(effectEcho);
+                sourceVoice.SetEffectChain(effectDescriptor);
+                sourceVoice.EnableEffect(0);
+
+            }
+            else if(directSoundEffect == 1)
+            {
+                SharpDX.XAPO.Fx.Reverb effectReverb = new SharpDX.XAPO.Fx.Reverb(xAudio2);   
+                EffectDescriptor effectDescriptor = new EffectDescriptor(effectReverb);
+                sourceVoice.SetEffectChain(effectDescriptor);
+                sourceVoice.EnableEffect(0);
+            }
 
         }
 
@@ -270,9 +289,37 @@ namespace KartaMuzyczna
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            device = new XAudio2();
-            device.StartEngine();
-            masteringVoice = new MasteringVoice(device);
+            xAudio2 = new XAudio2();
+            xAudio2.StartEngine();
+            masteringVoice = new MasteringVoice(xAudio2);
+            textBox2.Text = "Nagrywanie wylaczone";
+            
+            MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
+            MMDeviceCollection audioDevices = enumerator.EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active);
+            comboBox2.Items.AddRange(audioDevices.ToArray());
+
+            comboBox3.Items.Add("Bez");
+            comboBox3.Items.Add("Echo");
+            comboBox3.Items.Add("Reverb");
+            comboBox3.SelectedIndex = 0;
+
+        }
+
+        private void checkEfekt()
+        {
+            if (comboBox3.SelectedItem.Equals("Bez"))
+            {
+                directSoundEffect = -1;
+            }
+            else if (comboBox3.SelectedItem.Equals("Echo"))
+            {
+                directSoundEffect = 0;
+            }
+            else
+            {
+                directSoundEffect = 1;
+            }
+                
         }
 
         private void searchMicrophones_Click(object sender, EventArgs e)
@@ -324,7 +371,9 @@ namespace KartaMuzyczna
                 fileWriter = new WaveFileWriter(saveFile, waveIn.WaveFormat);
             
                 waveIn.StartRecording();
-                
+
+                textBox2.Text = "Nagrywanie wlaczone";
+
             }
             catch (Exception)
             {
@@ -344,6 +393,23 @@ namespace KartaMuzyczna
         private void stopRecording_Click(object sender, EventArgs e)
         {
             waveIn.StopRecording();
+
+            textBox2.Text = "Nagrywanie wylaczone";
+
+        }
+
+        private void timer1_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (comboBox2.SelectedItem != null)
+            {
+                MMDevice selectedDevice = (MMDevice) comboBox2.SelectedItem;
+                progressBar1.Value = (int) selectedDevice.AudioMeterInformation.MasterPeakValue * 100;
+            }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            checkEfekt();
         }
     }
     
