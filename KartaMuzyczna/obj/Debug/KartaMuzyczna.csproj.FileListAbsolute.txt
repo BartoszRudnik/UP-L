@@ -1,0 +1,10 @@
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\KartaMuzyczna.exe.config
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\KartaMuzyczna.exe
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\KartaMuzyczna.pdb
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.csprojAssemblyReference.cache
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.Properties.Resources.resources
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.csproj.GenerateResource.cache
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.csproj.CoreCompileInputs.cache
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.exe
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.pdb
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\obj\Debug\KartaMuzyczna.Form1.resources
