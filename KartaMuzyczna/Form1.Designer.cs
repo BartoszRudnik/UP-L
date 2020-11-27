@@ -47,6 +47,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -215,11 +223,89 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.PlaySound_Stop);
             // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(327, 380);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "DirectSound";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(327, 406);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(98, 35);
+            this.button12.TabIndex = 19;
+            this.button12.Text = "Start Player";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.DirectSound_Start);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(446, 406);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(101, 35);
+            this.button13.TabIndex = 20;
+            this.button13.Text = "Stop Player";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.DirectSound_Stop);
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(680, 112);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(157, 37);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Nagranie z mikrofonu";
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(595, 152);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(142, 46);
+            this.button14.TabIndex = 22;
+            this.button14.Text = "Wybierz lokalizacja zapisu";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(777, 152);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(142, 48);
+            this.button15.TabIndex = 23;
+            this.button15.Text = "Rozpocznij nagrywanie";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(680, 48);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(144, 24);
+            this.comboBox1.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(680, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(144, 23);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Dostepne mikrofony";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 511);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.label6);
@@ -240,9 +326,24 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label9;
+
+        private System.Windows.Forms.Button button15;
+
+        private System.Windows.Forms.Button button14;
+
+        private System.Windows.Forms.Label label8;
+
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+
+        private System.Windows.Forms.Label label7;
 
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;

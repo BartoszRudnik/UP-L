@@ -11,7 +11,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NAudio.Wave;
+using SharpDX;
+using SharpDX.Multimedia;
+using SharpDX.XAudio2;
 using WMPLib;
+using WaveFormat = SharpDX.Multimedia.WaveFormat;
 
 namespace KartaMuzyczna
 {
@@ -22,7 +26,11 @@ namespace KartaMuzyczna
         private SoundPlayer soundPlayer;
         private WindowsMediaPlayer windowsPlayer;
         private WaveOut waveOut;
-        
+        private XAudio2 device;
+        private SoundStream soundStream;
+        private SourceVoice sourceVoice;
+        private MasteringVoice masteringVoice;
+
         public Form1()
         {
             InitializeComponent();
@@ -226,6 +234,41 @@ namespace KartaMuzyczna
         private void PlaySound_Stop(object sender, EventArgs e)
         {
             PlaySound(null, new System.IntPtr(), PlaySoundFlags.SND_ASYNC);
+        }
+
+        private void DirectSound_Start(object sender, EventArgs e)
+        {
+            
+            soundStream = new SoundStream(File.OpenRead(loadFilePath));
+            WaveFormat format = soundStream.Format;
+
+            AudioBuffer buffer = new AudioBuffer
+            {
+              Stream = soundStream.ToDataStream(),
+              AudioBytes = (int)soundStream.Length,
+              Flags = BufferFlags.EndOfStream
+            };
+            
+            soundStream.Close();
+            
+            sourceVoice = new SourceVoice(device, format, true);
+            sourceVoice.SubmitSourceBuffer(buffer, soundStream.DecodedPacketsInfo);
+            sourceVoice.Start();
+
+        }
+
+        private void DirectSound_Stop(object sender, EventArgs e)
+        {
+           
+            sourceVoice.Stop();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            device = new XAudio2();
+            device.StartEngine();
+            masteringVoice = new MasteringVoice(device);
         }
     }
     
