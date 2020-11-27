@@ -5,14 +5,21 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace KartaMuzyczna
 {
     public partial class Form1 : Form
     {
+        
+        private String loadFilePath;
+        private SoundPlayer soundPlayer;
+        private WindowsMediaPlayer windowsPlayer;
+        
         public Form1()
         {
             InitializeComponent();
@@ -20,8 +27,7 @@ namespace KartaMuzyczna
 
         private void WczytajButtonClick(object sender, EventArgs e)
         {
-
-            String loadFilePath;
+            
             textBox1.Clear();
             
             OpenFileDialog loadFile = new OpenFileDialog();
@@ -76,6 +82,74 @@ namespace KartaMuzyczna
                 
             }
 
+        }
+
+        private void SystemMediaSoundPlayer_Start(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                soundPlayer = new SoundPlayer(loadFilePath);
+                soundPlayer.Play();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Wybrano bledny plik");
+            }
+            
+        }
+
+        private void SystemMediaSoundPlayer_Stop(object sender, EventArgs e)
+        {
+            soundPlayer.Stop();
+        }
+
+        private void WMP_MP3_Start(object sender, EventArgs e)
+        {
+            
+            OpenFileDialog newFile = new OpenFileDialog();
+            windowsPlayer = new WindowsMediaPlayer();
+            
+            if (newFile.ShowDialog() == DialogResult.OK)
+            {
+                    String mp3FilePath = newFile.FileName;
+
+                    windowsPlayer.URL = mp3FilePath;
+                    windowsPlayer.controls.play();
+
+            }
+            
+        }
+
+        private void WMP_MP3_Stop(object sender, EventArgs e)
+        {
+            windowsPlayer.controls.stop();
+        }
+
+        private void WMP_WAV_Start(object sender, EventArgs e)
+        {
+
+            try
+            {
+                
+                if(loadFilePath == null)
+                    throw new Exception();
+                
+                windowsPlayer = new WindowsMediaPlayer();
+                windowsPlayer.URL = loadFilePath;
+                windowsPlayer.controls.play();
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Wybrano bledny plik");
+            }
+
+        }
+
+        private void WMP_WAV_STOP(object sender, EventArgs e)
+        {
+            windowsPlayer.controls.stop();
         }
         
     }

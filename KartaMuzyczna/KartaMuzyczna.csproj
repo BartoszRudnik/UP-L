@@ -33,6 +33,22 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1">
+          <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="SharpDX.XAudio2, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1">
+          <HintPath>..\packages\SharpDX.XAudio2.4.2.0\lib\net45\SharpDX.XAudio2.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Xml.Linq" />
@@ -66,6 +82,7 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>
             <LastGenOutput>Settings.Designer.cs</LastGenOutput>

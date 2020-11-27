@@ -12,6 +12,7 @@
         <e p="Form1.resx" t="Include" />
         <e p="KartaMuzyczna.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
