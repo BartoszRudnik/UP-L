@@ -16,3 +16,5 @@ D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\SharpDX.XAudio2.dll
 D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\SharpDX.pdb
 D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\SharpDX.XAudio2.pdb
 D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\SharpDX.XAudio2.xml
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\NAudio.dll
+D:\JB_Rider\KartaMuzyczna\KartaMuzyczna\bin\Debug\NAudio.xml

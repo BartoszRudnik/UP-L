@@ -41,6 +41,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -153,11 +159,73 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.WMP_MP3_Stop);
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(327, 234);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 21);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "nAudio\r\n";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(327, 258);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(98, 28);
+            this.button8.TabIndex = 13;
+            this.button8.Text = "Start Player";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.nAudio_Start);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(446, 261);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(101, 25);
+            this.button9.TabIndex = 14;
+            this.button9.Text = "Stop Player";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.nAudio_Stop);
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(327, 304);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "PlaySound()";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(327, 330);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(98, 33);
+            this.button10.TabIndex = 16;
+            this.button10.Text = "Start Player";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.PlaySound_Start);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(446, 330);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(101, 33);
+            this.button11.TabIndex = 17;
+            this.button11.Text = "Stop Player";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.PlaySound_Stop);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 511);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label4);
@@ -175,6 +243,17 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+
+        private System.Windows.Forms.Label label6;
+
+        private System.Windows.Forms.Button button9;
+
+        private System.Windows.Forms.Button button8;
+
+        private System.Windows.Forms.Label label5;
 
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;

@@ -41,6 +41,10 @@
           <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1">
           <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
           <Private>True</Private>

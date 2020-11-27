@@ -4,47 +4,20 @@
     <projectFile>KartaMuzyczna/KartaMuzyczna.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a4fe774-8783-4b79-8b36-f2f91d181529" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.KartaMuzyczna/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/AxInterop.WMPLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/Interop.WMPLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/SharpDX.XAudio2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/SharpDX.XAudio2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/SharpDX.XAudio2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/SharpDX.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/SharpDX.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/SharpDX.4.2.0.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net40/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net40/SharpDX.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net40/SharpDX.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net45/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net45/SharpDX.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/net45/SharpDX.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/netstandard1.1/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/netstandard1.1/SharpDX.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/netstandard1.1/SharpDX.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/uap10.0/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/uap10.0/SharpDX.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/uap10.0/SharpDX.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.4.2.0/lib/uap10.0/SharpDX.pri" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/SharpDX.XAudio2.4.2.0.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net40/SharpDX.XAudio2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net40/SharpDX.XAudio2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net40/SharpDX.XAudio2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net45/SharpDX.XAudio2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net45/SharpDX.XAudio2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/net45/SharpDX.XAudio2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/netstandard1.1/SharpDX.XAudio2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/netstandard1.1/SharpDX.XAudio2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/netstandard1.1/SharpDX.XAudio2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/uap10.0/SharpDX.XAudio2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/uap10.0/SharpDX.XAudio2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/uap10.0/SharpDX.XAudio2.pri" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/SharpDX.XAudio2.4.2.0/lib/uap10.0/SharpDX.XAudio2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KartaMuzyczna/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KartaMuzyczna/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="8a4fe774-8783-4b79-8b36-f2f91d181529" name="Default Changelist" comment="odtwarzanie plików .WAV przy pomocy System.Media.SoundPlayer i WindowsMediaPlayer oraz odtwarzanie plików .MP3 przy pomocy WindowsMediaPlayer">
+      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/NAudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KartaMuzyczna/bin/Debug/NAudio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/NAudio.1.10.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/net35/NAudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/net35/NAudio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/netcoreapp3.0/NAudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/netcoreapp3.0/NAudio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/netstandard2.0/NAudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/netstandard2.0/NAudio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/uap10.0/NAudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/uap10.0/NAudio.pri" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/NAudio.1.10.0/lib/uap10.0/NAudio.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KartaMuzyczna/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KartaMuzyczna/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KartaMuzyczna/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KartaMuzyczna/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/Form1.cs" afterDir="false" />
@@ -56,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.exe" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/obj/Debug/KartaMuzyczna.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KartaMuzyczna/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/KartaMuzyczna/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +92,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606473663909</updated>
-      <workItem from="1606473665778" duration="6107000" />
+      <workItem from="1606473665778" duration="9060000" />
     </task>
+    <task id="LOCAL-00001" summary="odtwarzanie plików .WAV przy pomocy System.Media.SoundPlayer i WindowsMediaPlayer oraz odtwarzanie plików .MP3 przy pomocy WindowsMediaPlayer">
+      <created>1606481614854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606481614854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +112,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="odtwarzanie plików .WAV przy pomocy System.Media.SoundPlayer i WindowsMediaPlayer oraz odtwarzanie plików .MP3 przy pomocy WindowsMediaPlayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="odtwarzanie plików .WAV przy pomocy System.Media.SoundPlayer i WindowsMediaPlayer oraz odtwarzanie plików .MP3 przy pomocy WindowsMediaPlayer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2554" y="330" width="386" height="273" key="Github.ShareDialog" timestamp="1606476192141">
@@ -140,25 +124,29 @@
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2464" y="138" key="Github.UntrackedFilesDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606476203764" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1606481333421">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1606484303404">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481333421" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1606481333421">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606484303404" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1606484303404">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481333421" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1606481333421">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606484303404" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1606484303404">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481333421" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1606481333421">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606484303404" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1606484303404">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481333421" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606484303404" />
     <state x="2013" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1606481002480">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2013" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481002480" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606481625934">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1606481625934" />
   </component>
 </project>

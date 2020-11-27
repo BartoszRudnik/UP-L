@@ -6,9 +6,11 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Media;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NAudio.Wave;
 using WMPLib;
 
 namespace KartaMuzyczna
@@ -19,6 +21,7 @@ namespace KartaMuzyczna
         private String loadFilePath;
         private SoundPlayer soundPlayer;
         private WindowsMediaPlayer windowsPlayer;
+        private WaveOut waveOut;
         
         public Form1()
         {
@@ -151,7 +154,79 @@ namespace KartaMuzyczna
         {
             windowsPlayer.controls.stop();
         }
+
+        private void nAudio_Start(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                if (loadFilePath == null)
+                {
+                    throw new Exception();
+                }
+
+                AudioFileReader reader = new AudioFileReader(loadFilePath);
+                waveOut = new WaveOut();
+
+                waveOut.Init(reader);
+                waveOut.Play();
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Wybrano bledny plik");
+            }
+            
+        }
+
+        private void nAudio_Stop(object sender, EventArgs e)
+        {
+            waveOut.Stop();
+        }
         
+        [DllImport("winmm.DLL", EntryPoint = "PlaySound", SetLastError = true, CharSet = CharSet.Unicode, ThrowOnUnmappableChar = true)]
+        private static extern bool PlaySound(string szSound, System.IntPtr hMod, PlaySoundFlags flags);
+
+        [System.Flags]
+        public enum PlaySoundFlags : int
+        {
+            SND_SYNC = 0x0000,
+            SND_ASYNC = 0x0001,
+            SND_NODEFAULT = 0x0002,
+            SND_LOOP = 0x0008,
+            SND_NOSTOP = 0x0010,
+            SND_NOWAIT = 0x00002000,
+            SND_FILENAME = 0x00020000,
+            SND_RESOURCE = 0x00040004
+        }
+
+
+        private void PlaySound_Start(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (loadFilePath == null)
+                {
+                    throw new Exception();
+                }
+
+
+                PlaySound(loadFilePath, new System.IntPtr(), PlaySoundFlags.SND_ASYNC);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Wybrano bledny plik");
+            }
+            
+        }
+
+        private void PlaySound_Stop(object sender, EventArgs e)
+        {
+            PlaySound(null, new System.IntPtr(), PlaySoundFlags.SND_ASYNC);
+        }
     }
     
 }
