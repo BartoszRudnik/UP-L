@@ -30,6 +30,10 @@ namespace KartaMuzyczna
         private SoundStream soundStream;
         private SourceVoice sourceVoice;
         private MasteringVoice masteringVoice;
+        private List<WaveInCapabilities> listOfMicrophones;
+        private String saveFile;
+        private WaveIn waveIn;
+        private WaveFileWriter fileWriter;
 
         public Form1()
         {
@@ -269,6 +273,77 @@ namespace KartaMuzyczna
             device = new XAudio2();
             device.StartEngine();
             masteringVoice = new MasteringVoice(device);
+        }
+
+        private void searchMicrophones_Click(object sender, EventArgs e)
+        {
+            listOfMicrophones = new List<WaveInCapabilities>();
+            comboBox1.Items.Clear();
+
+            for (int i = 0; i < WaveIn.DeviceCount; i++)
+                listOfMicrophones.Add(WaveIn.GetCapabilities(i));
+
+            foreach (WaveInCapabilities micro in listOfMicrophones)
+            {
+                string item = micro.ProductName;
+                comboBox1.Items.Add(item);
+            }
+
+            comboBox1.SelectedIndex = 0;
+
+        }
+
+        private void saveFile_Click(object sender, EventArgs e)
+        {
+            
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                saveFile = saveFileDialog.FileName;
+            }
+            
+        }
+
+        private void recordAudio_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (saveFile == null)
+                {
+                    throw new Exception();
+                }
+                
+                waveIn = new WaveIn();
+
+                waveIn.DeviceNumber = comboBox1.SelectedIndex;
+                waveIn.WaveFormat = new NAudio.Wave.WaveFormat();
+            
+                waveIn.DataAvailable += new EventHandler<WaveInEventArgs>(waveInData);
+                fileWriter = new WaveFileWriter(saveFile, waveIn.WaveFormat);
+            
+                waveIn.StartRecording();
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nie wybrano pliku do zapisu");
+            }
+            
+        }
+
+        private void waveInData(object sender, WaveInEventArgs eventArgs)
+        {
+            
+            fileWriter.Write(eventArgs.Buffer, 0, eventArgs.BytesRecorded);
+            fileWriter.Flush();
+            
+        }
+
+        private void stopRecording_Click(object sender, EventArgs e)
+        {
+            waveIn.StopRecording();
         }
     }
     

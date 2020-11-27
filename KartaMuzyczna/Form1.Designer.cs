@@ -53,8 +53,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button17 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -261,45 +263,69 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(595, 152);
+            this.button14.Location = new System.Drawing.Point(680, 144);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(142, 46);
             this.button14.TabIndex = 22;
             this.button14.Text = "Wybierz lokalizacja zapisu";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.saveFile_Click);
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(777, 152);
+            this.button15.Location = new System.Drawing.Point(680, 207);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(142, 48);
             this.button15.TabIndex = 23;
             this.button15.Text = "Rozpocznij nagrywanie";
             this.button15.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(680, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 24);
-            this.comboBox1.TabIndex = 24;
+            this.button15.Click += new System.EventHandler(this.recordAudio_Click);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(680, 12);
+            this.label9.Location = new System.Drawing.Point(775, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(144, 23);
             this.label9.TabIndex = 25;
             this.label9.Text = "Dostepne mikrofony";
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(595, 12);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(142, 50);
+            this.button16.TabIndex = 26;
+            this.button16.Text = "Wyszukaj Mikrofony";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.searchMicrophones_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(777, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(142, 24);
+            this.comboBox1.TabIndex = 27;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(680, 271);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(142, 42);
+            this.button17.TabIndex = 28;
+            this.button17.Text = "Zakoncz nagrywanie";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.stopRecording_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 511);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.label8);
@@ -331,7 +357,12 @@
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Button button17;
+
         private System.Windows.Forms.ComboBox comboBox1;
+
+        private System.Windows.Forms.Button button16;
+
         private System.Windows.Forms.Label label9;
 
         private System.Windows.Forms.Button button15;
