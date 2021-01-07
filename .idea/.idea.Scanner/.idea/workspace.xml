@@ -4,11 +4,23 @@
     <projectFile>Scanner/Scanner.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93432e08-08f3-4504-aa48-fa10b868ce06" name="Default Changelist" comment="" />
+    <list default="true" id="93432e08-08f3-4504-aa48-fa10b868ce06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -18,12 +30,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1mkPufuIXUFMMwKjVB9ujR4Q2jg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -56,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610034839432</updated>
       <workItem from="1610034845621" duration="7000" />
-      <workItem from="1610035083322" duration="9029000" />
+      <workItem from="1610035083322" duration="12857000" />
     </task>
     <servers />
   </component>
@@ -69,26 +84,34 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1610046232259">
+    <state x="2567" y="330" key="Github.ShareDialog" timestamp="1610046548952">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2567" y="330" key="Github.ShareDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046548952" />
+    <state x="2464" y="138" key="Github.UntrackedFilesDialog" timestamp="1610046561353">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2464" y="138" key="Github.UntrackedFilesDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046561353" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1610049971134">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046232259" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1610046232259">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1610049971134">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046232259" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1610046232259">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1610049971134">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046232259" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1610046232259">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1610049971134">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046232259" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
     <state x="2281" y="164" key="Rider.ProjectTemplateDialog.Size" timestamp="1610034839549">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>

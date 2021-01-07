@@ -26,6 +26,7 @@ namespace Scanner
         private int scanColorMode;
         private int scanBrightness;
         private int scanContrast;
+        private int countScannings = 0;
         
         public Form1()
         {
@@ -36,6 +37,19 @@ namespace Scanner
             resolution = 300;
             scanWidth = (int) (resolution * 8.26);
             scanHeight = (int) (resolution * 11.69);
+            scanColorMode = 1;
+            scanContrast = 0;
+            scanBrightness = 0;
+            formatID = "{B96B3CAE-0728-11D3-9D7B-0000F81EF32E}";
+            
+            textBoxRozdzielczosc.Text = resolution.ToString();
+            textBoxSzerokosc.Text = scanWidth.ToString();
+            textBoxWysokosc.Text = scanHeight.ToString();
+
+            comboBox2.Items.Add("Kolorowe");
+            comboBox2.Items.Add("Szare");
+            comboBox2.Items.Add("Czarno biale");
+            comboBox2.SelectedIndex = 0;
 
         }
 
@@ -146,15 +160,12 @@ namespace Scanner
             {
                 
                 commonDialog = new CommonDialog();
+                countScannings++;
 
                 chooseScanner();
                 
                 Device connectedDevice = scanner.Connect();
                 Item scannerItem = connectedDevice.Items[1];
-
-                scanContrast = 0;
-                scanBrightness = 0;
-                scanColorMode = 0;
 
                 AdjustScannerSettings(scannerItem, resolution, 0, 0, scanWidth, scanHeight, scanBrightness, scanContrast, scanColorMode);
                 SetDeviceIntProperty(ref connectedDevice, 3088, 1);
@@ -162,7 +173,18 @@ namespace Scanner
                 
                 ImageFile image = commonDialog.ShowTransfer(scannerItem, formatID, true);
 
-                filePath += "\\scan.jpeg";
+                filePath += @"\";
+                filePath += countScannings.ToString();
+                filePath += "scan";
+
+                if (radioButtonBMP.Checked)
+                    filePath += ".bmp";
+                if (radioButtonPNG.Checked)
+                    filePath += ".png";
+                if (radioButtonJPEG.Checked)
+                    filePath += ".jpeg";
+                if (radioButtonTIFF.Checked)
+                    filePath += ".tiff";
 
                 if (File.Exists(filePath))
                 {
@@ -200,71 +222,72 @@ namespace Scanner
 
         private void radioButtonPNG_CheckedChanged(object sender, EventArgs e)
         {
-
-            if (radioButtonPNG.Checked)
-            {
-                if (radioButtonTIFF.Checked)
-                    radioButtonTIFF.Checked = false;
-                if (radioButtonJPEG.Checked)
-                    radioButtonJPEG.Checked = false;
-                if (radioButtonBMP.Checked)
-                    radioButtonBMP.Checked = false;
-            }
-
-            formatID = "B96B3CAF-0728-11D3-9D7B-0000F81EF32E";
-            
+            if(radioButtonPNG.Checked)
+                formatID = "{B96B3CAF-0728-11D3-9D7B-0000F81EF32E}";
         }
 
 
         private void radioButtonJPEG_CheckedChanged(object sender, EventArgs e)
         {
-
-            if (radioButtonJPEG.Checked)
-            {
-                if (radioButtonBMP.Checked)
-                    radioButtonBMP.Checked = false;
-                if (radioButtonPNG.Checked)
-                    radioButtonPNG.Checked = false;
-                if (radioButtonTIFF.Checked)
-                    radioButtonTIFF.Checked = false;
-            }
-
-            formatID = "B96B3CAE-0728-11D3-9D7B-0000F81EF32E";
-
+            if(radioButtonJPEG.Checked)
+                formatID = "{B96B3CAE-0728-11D3-9D7B-0000F81EF32E}";
         }
 
         private void radioButtonTIFF_CheckedChanged(object sender, EventArgs e)
         {
-
-            if (radioButtonTIFF.Checked)
-            {
-                if (radioButtonBMP.Checked)
-                    radioButtonBMP.Checked = false;
-                if (radioButtonPNG.Checked)
-                    radioButtonPNG.Checked = false;
-                if (radioButtonJPEG.Checked)
-                    radioButtonJPEG.Checked = false;
-            }
-
-            formatID = "B96B3CB1-0728-11D3-9D7B-0000F81EF32E";
-
+            if(radioButtonTIFF.Checked)
+                formatID = "{B96B3CB1-0728-11D3-9D7B-0000F81EF32E}";
         }
 
         private void radioButtonBMP_CheckedChanged(object sender, EventArgs e)
         {
+            if(radioButtonBMP.Checked)
+                formatID = "{B96B3CAB-0728-11D3-9D7B-0000F81EF32E}";
+        }
 
-            if (radioButtonBMP.Checked)
-            {
-                if (radioButtonTIFF.Checked)
-                    radioButtonTIFF.Checked = false;
-                if (radioButtonPNG.Checked)
-                    radioButtonPNG.Checked = false;
-                if (radioButtonJPEG.Checked)
-                    radioButtonJPEG.Checked = false;
-            }
+        private void textBoxRozdzielczosc_TextChanged(object sender, EventArgs e)
+        {
+            
+            resolution = Int32.Parse(textBoxRozdzielczosc.Text);
+            
+            scanWidth = (int) (resolution * 8.26);
+            scanHeight = (int) (resolution * 11.69);
+            
+            textBoxSzerokosc.Text = scanWidth.ToString();
+            textBoxWysokosc.Text = scanHeight.ToString();
+            
+        }
 
-            formatID = "B96B3CAB-0728-11D3-9D7B-0000F81EF32E";
+        private void textBoxSzerokosc_TextChanged(object sender, EventArgs e)
+        {
+            scanWidth = Int32.Parse(textBoxSzerokosc.Text);
+        }
 
+        private void textBoxWysokosc_TextChanged(object sender, EventArgs e)
+        {
+            scanHeight = Int32.Parse(textBoxWysokosc.Text);
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (comboBox2.Text == "Kolorowe")
+                scanColorMode = 1;
+            else if (comboBox2.Text == "Czarno biale")
+                scanColorMode = 2;
+            else if (comboBox2.Text == "Szare")
+                scanColorMode = 4;
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            scanBrightness = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            scanContrast = trackBar2.Value;
         }
     }
     
