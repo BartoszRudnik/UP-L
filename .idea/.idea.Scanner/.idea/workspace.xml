@@ -4,13 +4,14 @@
     <projectFile>Scanner/Scanner.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93432e08-08f3-4504-aa48-fa10b868ce06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="93432e08-08f3-4504-aa48-fa10b868ce06" name="Default Changelist" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/Scanner/Scanner.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scanner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/bin/Debug/Scanner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Scanner/obj/Debug/Scanner.pdb" afterDir="false" />
     </list>
@@ -30,16 +31,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1mkPufuIXUFMMwKjVB9ujR4Q2jg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -71,8 +76,24 @@
       <option name="presentableId" value="Default" />
       <updated>1610034839432</updated>
       <workItem from="1610034845621" duration="7000" />
-      <workItem from="1610035083322" duration="12857000" />
+      <workItem from="1610035083322" duration="13184000" />
+      <workItem from="1610057208676" duration="1462000" />
     </task>
+    <task id="LOCAL-00001" summary="interfejs aplikacji">
+      <created>1610050287282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610050287282</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor">
+      <created>1610050500918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610050500918</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,7 +102,11 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="interfejs aplikacji" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2567" y="330" key="Github.ShareDialog" timestamp="1610046548952">
@@ -92,29 +117,37 @@
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2464" y="138" key="Github.UntrackedFilesDialog/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610046561353" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1610049971134">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1610058412728">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1610049971134">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610058412728" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1610058412728">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1610049971134">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610058412728" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1610058412728">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1610049971134">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610058412728" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1610058412728">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@0.0.1536.864" timestamp="1610041398585" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610049971134" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610058412728" />
     <state x="2281" y="164" key="Rider.ProjectTemplateDialog.Size" timestamp="1610034839549">
       <screen x="1920" y="0" width="1536" height="864" />
     </state>
     <state x="2281" y="164" key="Rider.ProjectTemplateDialog.Size/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610034839549" />
+    <state x="2197" y="77" key="SettingsEditor" timestamp="1610050370330">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2197" y="77" key="SettingsEditor/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610050370330" />
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610050504756">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2281" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1536.864@1920.0.1536.864" timestamp="1610050504756" />
   </component>
 </project>

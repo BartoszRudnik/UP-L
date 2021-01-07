@@ -221,19 +221,25 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.LargeChange = 1;
+            this.trackBar1.LargeChange = 50;
             this.trackBar1.Location = new System.Drawing.Point(17, 559);
+            this.trackBar1.Maximum = 1000;
+            this.trackBar1.Minimum = -1000;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(168, 56);
+            this.trackBar1.SmallChange = 10;
             this.trackBar1.TabIndex = 18;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // trackBar2
             // 
-            this.trackBar2.LargeChange = 1;
+            this.trackBar2.LargeChange = 50;
             this.trackBar2.Location = new System.Drawing.Point(201, 559);
+            this.trackBar2.Maximum = 1000;
+            this.trackBar2.Minimum = -1000;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(173, 56);
+            this.trackBar2.SmallChange = 10;
             this.trackBar2.TabIndex = 19;
             this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
