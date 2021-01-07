@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WIA;
 using CommonDialog = WIA.CommonDialog;
@@ -26,7 +20,8 @@ namespace Scanner
         private int scanColorMode;
         private int scanBrightness;
         private int scanContrast;
-        private int countScannings = 0;
+        private int countScannings;
+        private String success = "Skanowanie zostało zakonczone";
         
         public Form1()
         {
@@ -193,7 +188,7 @@ namespace Scanner
 
                 image.SaveFile(filePath);
 
-                MessageBox.Show("Skanowanie zostało zakonczone");
+                MessageBox.Show(success);
 
                 Image image2 = Image.FromFile(filePath);
                 pictureBox1.Image = image2;
