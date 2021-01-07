@@ -1,0 +1,12 @@
+D:\JB_Rider\Scanner\Scanner\bin\Debug\Scanner.exe.config
+D:\JB_Rider\Scanner\Scanner\bin\Debug\Scanner.exe
+D:\JB_Rider\Scanner\Scanner\bin\Debug\Scanner.pdb
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.csprojAssemblyReference.cache
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.Properties.Resources.resources
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.csproj.GenerateResource.cache
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.csproj.CoreCompileInputs.cache
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.exe
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.pdb
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Interop.WIA.dll
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.csproj.ResolveComReference.cache
+D:\JB_Rider\Scanner\Scanner\obj\Debug\Scanner.Form1.resources
