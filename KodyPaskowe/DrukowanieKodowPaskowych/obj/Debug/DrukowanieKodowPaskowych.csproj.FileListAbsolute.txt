@@ -1,0 +1,15 @@
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\DrukowanieKodowPaskowych.exe.config
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\DrukowanieKodowPaskowych.exe
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\DrukowanieKodowPaskowych.pdb
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.csprojAssemblyReference.cache
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.Properties.Resources.resources
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.csproj.GenerateResource.cache
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.csproj.CoreCompileInputs.cache
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.exe
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.pdb
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.Form1.resources
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\Spire.Barcode.dll
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\Spire.License.dll
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\Spire.Barcode.xml
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\bin\Debug\Spire.License.xml
+D:\JB_Rider\DrukowanieKodowPaskowych\DrukowanieKodowPaskowych\obj\Debug\DrukowanieKodowPaskowych.csproj.CopyComplete
